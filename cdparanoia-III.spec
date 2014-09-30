@@ -1,7 +1,8 @@
+# based on PLD Linux spec git://git.pld-linux.org/packages/.git
 Summary:	Utility to copy digital audio cd's
 Name:		cdparanoia-III
 Version:	10.2
-Release:	12
+Release:	13
 Epoch:		1
 License:	GPL
 Group:		Applications/Sound
@@ -45,7 +46,6 @@ This package contains header files for CD Paranoia libraries.
 %patch1 -p1
 
 %build
-# bleh? look at the beginning of configure.in
 cp -f %{_datadir}/automake/config.guess configure.guess
 cp -f %{_datadir}/automake/config.sub configure.sub
 %{__aclocal}
